@@ -2,18 +2,16 @@
 using namespace std;
 
 int main(){
-    cout << "Ayman Haseeb, SRM University, Passout: 2026" << endl;
     int n;
     cout << "Enter the size of the matrix : ";
     cin>>n;
     int matrix[101][101];
-
     int row=0, col=0;
+    
     // 0:right, 1:down, 2:left; 3:up
     int direction = 0;
     int count = 1;
 
-    int right=0, left=0;
     while(count <= n*n) {
         matrix[row][col] = count;
 
@@ -48,6 +46,7 @@ int main(){
             else
                 row--;
         }
+        
         count++;
     }
 
